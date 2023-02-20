@@ -19,7 +19,8 @@ The following should be installed in your machine.
 ## How To Install And Run The Application
 
 - Clone this [Repo](https://github.com/ProjectEinsteinBarrier/apil-me-web-app.git) and `cd` into it
-- You would need a `.env` file from a team member that has it
+- Create a `.env` file and add this `VITE_APP_BASE_URL=https://jsonplaceholder.typicode.com`
 - Install the dependencies by running `yarn`
 - Start the application on development mode by running `yarn start`
+
 
