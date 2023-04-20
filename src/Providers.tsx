@@ -11,9 +11,14 @@ const reactQueryConfig = {
   retry: true,
 }
 
+const mutationQueryConfig = {
+  refetchOnWindowFocus: false,
+  retry: false,
+}
+
 const defaultOptions = {
   queries: reactQueryConfig,
-  mutations: reactQueryConfig,
+  mutations: mutationQueryConfig,
 }
 
 const queryClient = new QueryClient({
