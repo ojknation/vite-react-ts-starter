@@ -1,5 +1,9 @@
 import { theme } from "@/theme"
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
+import {
+  QueryCache,
+  QueryClient,
+  QueryClientProvider,
+} from "@tanstack/react-query"
 import { ChakraProvider } from "@chakra-ui/react"
 
 type Props = {
@@ -18,6 +22,13 @@ const defaultOptions = {
 
 const queryClient = new QueryClient({
   defaultOptions,
+  queryCache: new QueryCache({
+    onError: (err, query) => {
+      if (query?.meta?.errorMessage) {
+        // handle error appropriately, e.g. show a toast notification
+      }
+    },
+  }),
 })
 
 const Providers = (props: Props) => {
