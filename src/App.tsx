@@ -1,11 +1,11 @@
+import { Box, Flex, Text } from "@radix-ui/themes"
 import { useQuery } from "@tanstack/react-query"
 import { testApi } from "@/services/sampleService"
-import { Box, Flex, Text } from "@radix-ui/themes"
 
 function App() {
   const { data } = useQuery({ queryKey: ["users"], queryFn: () => testApi() })
   return (
-    <Box>
+    <Box className="w-[100%] justify-center items-center flex flex-col h-[100vh]">
       <Text size="4" weight="bold">
         Radix UI component
       </Text>
@@ -16,8 +16,9 @@ function App() {
           </Text>
         ))}
       </Flex>
-      <p className="text-red-500 font-extrabold  mt-5 text-3xl">Tailwind</p>
-      <div>Headwind</div>
+      <p className="text-red-500 font-extrabold  mt-5 text-3xl">
+        Tailwind styling
+      </p>
     </Box>
   )
 }
