@@ -5,7 +5,7 @@
 
 - [vite](https://vitejs.dev/)
 - [tanstack/react-query](https://tanstack.com/query/v4/docs/react/overview)
-- [Chakra-UI](https://chakra-ui.com/)
+- [Radix-UI](https://www.radix-ui.com/)
 - [Axios](https://axios-http.com/docs/intro)
 
 # Getting Started

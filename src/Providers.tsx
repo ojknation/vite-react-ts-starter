@@ -1,10 +1,9 @@
-import { theme } from "@/theme"
 import {
   QueryCache,
   QueryClient,
   QueryClientProvider,
 } from "@tanstack/react-query"
-import { ChakraProvider } from "@chakra-ui/react"
+import { Theme } from "@radix-ui/themes"
 
 type Props = {
   children: React.ReactNode
@@ -39,7 +38,7 @@ const queryClient = new QueryClient({
 const Providers = (props: Props) => {
   return (
     <QueryClientProvider client={queryClient}>
-      <ChakraProvider theme={theme}>{props.children}</ChakraProvider>
+      <Theme>{props.children}</Theme>
     </QueryClientProvider>
   )
 }
