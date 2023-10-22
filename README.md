@@ -13,6 +13,8 @@ The main branch of this repo has no styling library included
 
 - The `chakra-UI-styling` branch uses [Chakra-UI](https://chakra-ui.com/)
 - The `Tailwind-radixUI` branch uses [TailwindCSS](https://tailwindcss.com/) & [RadixUI](https://radix-ui.com/)
+
+  If you intend to use either tailwind or chakraUI remember to clone all branches if you using this repository as a template
   
 
 
