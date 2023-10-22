@@ -22,7 +22,7 @@ const typographyMap: Record<number, string> = {
 }
 
 function App() {
-  const { data } = useQuery(["users"], () => testApi())
+  const { data } = useQuery({ queryKey: ["users"], queryFn: () => testApi() })
   return (
     <Container maxW="xl">
       <Stack mt={10} spacing={4} direction="row" align="center">
