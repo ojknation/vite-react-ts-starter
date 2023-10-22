@@ -10,7 +10,9 @@
     "preview": "vite preview",
     "theme": "chakra-cli tokens ./src/theme/index.ts",
     "theme:watch": "chakra-cli tokens ./src/theme/index.ts --watch",
-    "lint": "eslint --fix --ext .ts,.tsx ."
+    "lint": "eslint --fix --ext .ts,.tsx .",
+    "useChakraUI": "git checkout main && git merge chakraUi-styling && git branch -d chakraUi-styling && git branch -d tailwind-radixUI",
+    "useTailwind": "git checkout main && git merge tailwind-radixUI && git branch -d tailwind-radixUI && git branch -d chakraUi-styling"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.5.1",
