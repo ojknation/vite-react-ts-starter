@@ -5,8 +5,16 @@
 
 - [vite](https://vitejs.dev/)
 - [tanstack/react-query](https://tanstack.com/query/v4/docs/react/overview)
-- [Chakra-UI](https://chakra-ui.com/)
 - [Axios](https://axios-http.com/docs/intro)
+
+## Styling
+
+The main branch of this repo has no styling library included
+
+- The `chakra-UI-styling` branch uses [Chakra-UI](https://chakra-ui.com/)
+- The `Tailwind-radixUI` branch uses [TailwindCSS](https://tailwindcss.com/) & [RadixUI](https://radix-ui.com/)
+  
+
 
 # Getting Started
 
